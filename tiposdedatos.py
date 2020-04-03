@@ -38,3 +38,43 @@ numero_2 = float(input("Ingresa el segundo valor: "))
 total = numero_1 * numero_2
 
 print("Total de la multipicacion es:", "{:0.3f}".format(total))
+
+print("Ingresa dos numeros a restar")
+numero_1 = float(input("Ingresa el primer valor: "))
+numero_2 = float(input("Ingresa el segundo valor: "))
+
+total = numero_1 - numero_2
+
+print("Total de la resta es:", "{:0.2}".format(total))
+
+print("Ingresa dos numeros para calcular la potencia")
+numero_1 = float(input("Ingresa el primer valor: "))
+numero_2 = float(input("Ingresa el segundo valor: "))
+
+total = numero_1 ** numero_2
+
+print("Total de la potencia es:", "{:0.2}".format(total))
+
+print("Ingresa dos numeros a dividir")
+numero_1 = float(input("Ingresa el primer valor: "))
+numero_2 = float(input("Ingresa el segundo valor: "))
+
+total = numero_1 / numero_2
+
+print("Total de la division es:", "{:0.2}".format(total))
+
+print("Ingresa dos numeros a dividir (division exacta")
+numero_1 = float(input("Ingresa el primer valor: "))
+numero_2 = float(input("Ingresa el segundo valor: "))
+
+total = numero_1 // numero_2
+
+print("Total de la division exacta es:", total)
+
+print("Ingresa dos numeros a dividir")
+numero_1 = float(input("Ingresa el primer valor: "))
+numero_2 = float(input("Ingresa el segundo valor: "))
+
+total = numero_1 % numero_2
+
+print("El residuo de la division es:", "{:0.2}".format(total))
