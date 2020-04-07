@@ -25,3 +25,13 @@ while payments < 10:
   acum += pay
   payments += 1
 print(f'Total de lo que le has pagado a la Iglesia: {acum:.2f}')
+
+#FOR
+print("--------LO MISMO EN FOR----------")
+
+acum = 0
+
+for i in range(0,10):
+    pay = float(input('Ingresa tu diezmo a la iglesia: '))
+    acum += pay
+print(f'Total de lo que le has pagado a la Iglesia: {acum:.2f}')
