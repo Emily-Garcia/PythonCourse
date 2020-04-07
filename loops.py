@@ -54,19 +54,16 @@ for estudiante in estudiantes:
 
     notas = estudiante[1]
 
-    calif_1 = notas[0]
-    calif_2 = notas[1]
-    calif_3 = notas[2]
+    #Enumerate trae la longitud de la lista
+    # trae el indice y el valor:
+    #i es el contador
+    # nota es la variable de la lista
+    for i, nota in enumerate(notas):
+        print(f"Calificacion #{i + 1}: {nota}")
 
-    print(calif_1)
-    print(calif_2)
-    print(calif_3)
+    #sum hace la suma de una lista de numeros
+    #len saca la longitud de una lista
+    promedio = sum(notas)/len(notas)
 
-    prom = (calif_1 + calif_2 + calif_3)/3
-
-    print(prom)
-
-    if prom > 6:
-        print("APROBADO")
-    else:
-        print("REPROBADO")
+    #operado ternario if else
+    print(f'PROMEDIO: {promedio:.2f} - { "APROBADO" if promedio > 6 else "REPROBADO"}')
